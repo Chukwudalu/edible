@@ -1,19 +1,15 @@
-import { useState, useEffect, memo } from 'react'
+import { useState, useEffect} from 'react'
 import { FavoriteBorderOutlined, Favorite, BookmarkBorderOutlined, Bookmark } from '@mui/icons-material'
 import { pink } from '@mui/material/colors';
-import { useNavigate } from "react-router-dom";
 import slugify from 'react-slugify';
 import { EncryptStorage } from 'encrypt-storage';
 
-// import { saveLikedMealToLocalStorage, getLikedMealsFromLocalStorage } from '../features/storage'
-// import testImg from '../assets/testImg.jpg'
 
 const encryptStorage = new EncryptStorage(process.env.REACT_APP_LOCALSTORAGE_ENCRYPTION_SECRET_KEY, {
   prefix: '@base'
 });
 
 const MealCard = ({mealId, mealName, mealArea, mealCategory, mealImage, favorites, setFavorites, bookmarks, setBookmarks}) => {
-  const navigate = useNavigate()
   const value = encryptStorage.getItem('grant'); 
   
   const [isLiked, setIsLiked] = useState(false);
