@@ -25,7 +25,6 @@ function ProfileModal({toggleProfileModal, profileModalOpen}) {
     <ul className='profileModal'>
       <li onClick={handleFavoritesClick}>Your favorites</li>
       <li onClick={handleBookmarksClick}>Your bookmarks</li>
-      <li>Account settings</li>
     </ul>
   )
 }
