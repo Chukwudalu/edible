@@ -1,0 +1,13 @@
+.search-suggestions-list{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: fit-content;
+    padding: 2rem;
+    z-index: 2000;
+    background: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+}

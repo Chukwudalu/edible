@@ -1,0 +1,119 @@
+.auth{
+    width: 100%;
+    margin: 2rem 0 4rem 0;
+    min-height: 70vh;
+
+    &__container{
+        width: 80%;
+        margin: auto;
+        
+
+        h2{
+            // font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        @include respond(tablet-large){
+            width: 50%;
+            margin: auto;
+        }
+        
+        @include respond(desktop-small){
+            width: 30%;
+            margin: auto;
+        }
+
+        
+    }
+
+    &__form{
+        width: 100;
+        // background: green;
+        
+    }
+
+    &__submit{
+        width: 100%;
+        padding: 1rem 0;
+        font-size: $default-font-size;
+        border: none;
+        outline: none;
+        background: #9F4E06;
+        color: $color-primary-white;
+        cursor: pointer;
+        border-radius: 0.3rem;
+    }
+
+    &__errors{
+        width: 100%;
+        text-align: left;
+
+        li{
+            color: red;
+        }
+    }
+
+    &__accountaccess{
+        margin-top: 2rem;
+        a{
+            color: $color-accent-lightBlue;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.inputContainer{
+    border: solid 1px #ccc;
+    position: relative;
+    padding: 0.5rem 1rem 0 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+}
+
+.inputContainer input{
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 28px 0 10px;
+    width: 100%;
+}
+
+.inputLabel{
+    font-size: 1.05rem;
+    position: absolute;
+    // transform: translate(0, 1.1rem) scale(1);
+}
+
+.auth__accountaccess__signup{
+    text-decoration: none;
+    color: $color-accent-lightBlue;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.auth__accountaccess__login{
+    text-decoration: none;
+    color: $color-accent-lightBlue;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.authErrorBox{
+    width: 90%;
+    margin: 1rem auto;
+    height: fit-content;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+        &{
+            max-width: 40%;
+        }
+    }
+}
+
+.authErrorMsg{
+    font-size: 1.1rem;
+    color: #F2594B;
+}
+

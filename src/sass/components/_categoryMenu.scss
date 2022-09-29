@@ -1,0 +1,48 @@
+.categoryMenu{
+    width: 90%;
+    margin: 2.5rem auto;
+    // position: sticky;
+    // top: 5.6rem;
+    // z-index: 1000;
+    // background: $color-primary-white;
+   
+    &__headingAndSlider{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    &__Container{
+        // width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // display: block;
+        padding: 1rem 0.1rem;
+        overflow-x: scroll;
+        overflow-y: hidden; 
+    }
+}
+
+// .categoryMenu::-webkit-scrollbar{
+//     display: none;
+//     scrollbar-width:none
+// }
+// .categoryMenu::-webkit-scrollbar {
+//     width: 5px;
+// }
+// /* Track */
+// .categoryMenu::-webkit-scrollbar-track {
+//     background: #f1f1f1; 
+// }
+// /* Handle */
+// .categoryMenu::-webkit-scrollbar-thumb {
+//     border-radius: 10px;
+//     background: #808080;
+// }
+
+// html::-webkit-scrollbar-thumb {
+//     background-color: orange;
+//     outline: 1px solid slategrey;
+// }

@@ -1,0 +1,19 @@
+.mealSection{
+    width: 90%;
+    height: auto;
+    margin: 0 auto 3rem auto;
+    
+
+    h2{
+        margin-bottom: 1rem;
+    }
+
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+        // grid-template-columns: 1fr 1fr 1fr 1fr;
+        // column-gap: 1rem;
+        gap: 3rem 3rem;
+    }
+    
+}

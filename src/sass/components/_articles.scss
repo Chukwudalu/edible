@@ -1,0 +1,47 @@
+.articlesContainer{
+    height: fit-content;
+    width: 90%;
+    margin: 0 auto 3rem auto;
+    
+    & > h2{
+        margin-bottom: 1rem;
+    }
+
+    &__div{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 3rem;
+        overflow: hidden;
+    }
+    
+}
+
+.articles{
+    position: relative;
+    height: 25rem;
+    // background-image: url(../../assets/healthTipsImage1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 2rem;
+
+    &:first-child{
+        background-image: url(../../assets/healthTipsImage1.jpg);
+        color: $color-accent-orange;
+    }
+    &:last-child{
+        background-image: url(../../assets/healthTipsImage2.jpg);
+        color: $color-accent-yellow;
+    }
+
+    & > p{
+        position: absolute;
+        left: 2rem;
+        top: 2rem;
+        font-family: 'Fredoka One', cursive;
+        font-size: 2rem;
+        line-break: 3rem;
+    }
+}
+

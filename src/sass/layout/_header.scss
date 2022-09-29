@@ -1,0 +1,75 @@
+.header{
+    width: 100%;
+    height: 5.6rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    z-index: 2000;
+    // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    // position: sticky;
+    top: 0;
+    left: 0;
+
+    &__logo{
+        font-family: 'Fredoka One', cursive;
+        color: $color-accent-orange;
+        flex-basis: 0.5;
+        font-size: 2.1rem;
+        cursor: pointer;
+    }
+
+    &__navigation{
+        &__list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            height: 100%;
+
+            &__accountIconContainer{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                margin-left: 1.5rem;
+                cursor: pointer;
+                position: relative;
+            }
+
+            &__accountIcon.MuiIcon-fontSizeLarge{
+                font-size: 2.3rem;
+            }
+
+            &__login{
+                color: $color-accent-lightBlue;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.profileModal{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 15rem;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    z-index: 2000;
+    // transition: all 0.5s ease-out;
+    
+
+    li{
+        width: 100%;
+        list-style: none;
+        padding: 0.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 0.1rem solid #eee 
+    }
+}

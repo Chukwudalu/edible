@@ -1,0 +1,163 @@
+.mealCard{
+    height: 17rem;
+    max-height: auto;
+    // background: green;
+    position: relative;
+    &__imgContainer{
+        height: 70%;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        border-radius: 0.7rem;
+        cursor: pointer;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    &__detail{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+
+        & > h4{
+            display: block;
+            width: 60%;
+            height: auto;
+            text-overflow: ellipsis;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+    }
+
+    &__icons{
+        cursor: pointer;
+        color: black;
+    }
+}
+
+.favorite__container{
+    position: absolute;
+    overflow: hidden;
+    background: rgba($color: #e5e5e5, $alpha: 0.75);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 1rem;
+    right: 1rem;
+}
+
+
+// .bookmark__container{
+//     border-radius: 50%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 2.5rem;
+//     height: 2.5rem
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .mealCard{
+//     min-height: 20rem;
+//     height: 25rem;
+//     // box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+//     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+//     border-radius: 0.7rem;
+//     overflow: hidden;
+//     position: relative;
+    
+
+//     &__imgContainer{
+//         width: 100%;
+//         height: 55%;
+//         cursor: pointer;
+//     }
+
+//     &__img{
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//     }
+
+//     &__detail{
+//         // background: grey;
+//         padding: 1.2rem 1rem;
+//         position: relative;
+
+//         &__mealName{
+//             display: block;
+//             width: fit-content;
+//             margin-bottom: 1rem;
+//             font-size: 1rem;
+//             text-transform: uppercase;
+//         }
+//     }
+
+//     &__tagsContainer{
+//         width: fit-content;
+//         // min-width: 15rem;
+//         // background: green;
+//     }
+
+//     &__tags{
+//         width: fit-content;
+//         background: $color-accent-orange;
+//         font-size: 1rem;
+//         font-weight: 600;
+//         padding: 0.5rem 1rem;
+//         color: #fff;
+//         border-radius: 1.8rem;
+
+//         &:nth-child(2){
+//             margin-left: 1rem;
+//         }
+//     }
+
+//     &__icons{
+//         position: absolute;
+//         cursor: pointer;
+//         &.MuiSvgIcon-fontSizeMedium{
+//             font-size: 1.4rem;
+//         }
+
+//         &--thumbsUp{
+//             right: 1rem;
+//             top: 1.4rem;
+//         }
+
+//         &--bookmark{
+//             right: 1rem;
+//             top: 5rem;
+//         }
+//     }
+// }

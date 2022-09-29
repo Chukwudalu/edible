@@ -1,0 +1,15 @@
+.bookmarks{
+    width: 90%;
+    min-height: 70vh;
+    margin: 2rem auto 1.6rem auto;
+
+    h2{
+        margin-bottom: 2rem;
+    }
+}
+
+.bookmarkedMealsContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    gap: 3rem 3rem;
+}

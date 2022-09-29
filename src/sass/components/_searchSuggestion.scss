@@ -1,0 +1,29 @@
+.search-suggestion{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    transition: background 0.2s ease;
+
+    &:hover{
+        background: rgb(232, 232, 232);
+    }
+
+    &__imageContainer{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+    }
+
+    &__image{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    &__name{
+        margin-left: 4rem;
+    }
+}

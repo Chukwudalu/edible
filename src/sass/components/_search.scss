@@ -1,0 +1,42 @@
+.search{
+    position: relative;
+    width: 35rem;
+    padding: 0.5rem;
+    background: #E5E5E5;
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    
+
+    &__icon.MuiIcon-fontSizeLarge{
+        font-size: 2rem;
+        margin: 0 0.5rem 0 0.5rem;
+        color: $color-secondary-black;
+    }
+
+    &__bar{
+        width: 90%;
+        padding: 0.5rem;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.3rem;
+        border: none;
+        outline: none;
+        background: none;
+
+        &::placeholder{
+            color: $color-secondary-black;
+            font-size: 1.1rem;
+        }
+    }
+
+    &--isMobile{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 1.6rem;
+        
+        & .search__bar::placeholder{
+            font-size: 1.15rem;
+            font-weight: 600;
+        }
+    }
+}

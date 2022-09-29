@@ -1,0 +1,86 @@
+.details{
+    width: 90%;
+    margin: 2rem auto 1.6rem auto;
+    min-height: 70vh;
+
+    &__mainContent{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 3rem 3rem;
+    }
+
+    &__imgContainer{
+        height: 30rem;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        // background: cyan;
+
+        & > h2{
+            margin-top: 1rem;
+        }
+
+
+
+    }
+
+    &__category-area{
+        width: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & > span:first-child{
+            margin-right: 1rem;
+        }
+    }
+
+    &__ingredientsContainer{
+        & > h3{
+            margin: 2rem 0 0.2rem 0;
+        }
+        margin-bottom: 2rem;
+    }
+
+    &__ingredientsList{
+        width: 90%; 
+        // margin: auto;
+        // background: green;
+        margin: 0 auto;
+    }
+
+    &__instructions{
+        margin-bottom: 2rem;
+    }
+
+    &__tags{
+        width: fit-content;
+    }
+}
+
+.tags{
+    background: $color-accent-orange;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+
+    &--bottom{
+        &:not(:first-child){
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+

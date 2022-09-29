@@ -1,0 +1,43 @@
+.categoryMenuItem{
+    width: fit-content;
+    height: 3.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background: #e5e5e5;
+    background: #e9ecef;
+    border-radius: 5rem;
+    padding: 1rem;
+    // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
+    // box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    // box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    cursor: pointer;
+    border: 0.1rem grey solid;
+    backface-visibility: hidden;
+    
+    outline: none;
+
+    &:not(:first-child){
+        margin-left: 1.4rem;
+    }
+
+    &__imgContainer{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__text{
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-left: 0.5rem;
+    }
+    
+}

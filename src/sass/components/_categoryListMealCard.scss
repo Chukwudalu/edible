@@ -1,0 +1,58 @@
+.clMealCard{
+    min-height: fit-content;
+    height: 23rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 0.7rem;
+    overflow: hidden;
+    
+    // background: blue;
+    // position: relative;
+    
+
+    &__imgContainer{
+        min-height: 15rem;
+        height: 15rem;
+        width: 100%;
+    }
+
+    &__img{
+        height: 15rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__infoContainer{
+        height: 8rem;
+        // max-height: fit-content;
+        padding: 1.5rem 1rem;
+        background: #e9ecef
+    }
+
+    &__mealNameContainer{
+        width: fit-content;
+        margin-bottom: 0.8rem;
+    }
+
+    &__mealName{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    &__iconsContainer{
+        width: fit-content;
+    }
+
+    &__icons{
+        cursor: pointer;
+        &:not(:first-child){
+            margin-left: 1rem;
+        }
+
+        &.MuiSvgIcon-fontSizeMedium{
+            font-size: 1.7rem;
+        }
+    }
+    
+
+}

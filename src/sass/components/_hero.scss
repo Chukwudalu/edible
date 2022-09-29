@@ -1,0 +1,45 @@
+.hero{
+    width: 90%;
+    min-height: 17.6rem;
+    margin: 2rem auto 1.6rem auto;
+    // padding: 3.2rem 2.4rem 0 2.4rem;
+    padding: 3.2rem 1.8rem 0 1.8rem;
+    background: $color-secondary-black;
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    // &__info{
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
+    &__touch-line{
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $color-accent-orange;
+    }
+
+    &__catch-line{
+        font-size: 1.6rem;
+        font-family: 'Fredoka One', cursive;
+        color: #fff;
+        // text-align: center;
+    }
+
+    &__imgContainer{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        &__Image{
+            height: 90%;
+            width: 90%;
+            object-fit: contain;
+        }
+    }
+}
+
+.hideHeroImg{
+    display: none;
+}
