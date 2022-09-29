@@ -88,6 +88,14 @@ a{
         color: #f1f1f1;
         font-size: 2rem;
     }
+
+    @media screen and (max-width: 768px) {
+        &{
+            right: 1rem;
+        }
+        
+    }
+
 }
 
 ::-webkit-scrollbar {
