@@ -12,7 +12,6 @@ function SkeletonCard({ cards }) {
             </div>
         </div>
     ))
-    
   )
 }
 

@@ -80,7 +80,7 @@ function Header({toggleProfileModal, profileModalOpen, logOutUser, toggleSuggest
     
     return (
         <header className='header' >
-            <h1 className='header__logo' onClick={handleLogoClick}>Edible</h1>
+            <h1 className='header__logo' onClick={handleLogoClick}>Edibble</h1>
 
             { 
                 // LargerScreenSearchRenderer(toggleSuggestionModal, searchSuggestionModalOpen)
