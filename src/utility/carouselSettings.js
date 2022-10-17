@@ -1,9 +1,9 @@
-import { ArrowCircleRight, ArrowCircleLeft } from '@mui/icons-material'
+import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material'
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
-        <ArrowCircleRight
+        <ArrowForwardIos
             className={'MuiIcon-fontSizeLarge carousel-arrow carousel-arrow--next'}
             style={{ ...style,  zIndex: 2000 }}
             onClick={onClick}
@@ -14,7 +14,7 @@ function SampleNextArrow(props) {
 function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
-        <ArrowCircleLeft
+        <ArrowBackIos
             className={'MuiIcon-fontSizeLarge carousel-arrow carousel-arrow--prev'}
             style={{ ...style, zIndex: 2000 }}
             onClick={onClick}
@@ -24,11 +24,11 @@ function SamplePrevArrow(props) {
 const settings = {
     dots: true,
     className: "center",
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 3,
-    // initialSlide: 0,
+    initialSlide: 0,
     swipeToSlide: true,
     centerPadding: "30px",
     cancelable: true,
