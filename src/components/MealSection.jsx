@@ -26,7 +26,7 @@ function MealSection({mealSectionTitle, data}) {
 
   return (
     <section className='mealSection'>
-      <h2>{mealSectionTitle || (<Skeleton />)}</h2>
+      <h2>f{mealSectionTitle || (<Skeleton />)}</h2>
       <div className='mealSection__container'>
         {
           data && data.map(m => <MealCard 
